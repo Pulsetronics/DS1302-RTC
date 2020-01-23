@@ -3,7 +3,7 @@ The DS1302 trickle-charge timekeeping chip contains a real-time clock/calendar a
 
 <img src="images/Screenshot (31).png" width= "500">
 
-Interfacing the DS1302 with a microprocessor is simplified by using synchronous serial communication. Only three wires are required to communicate with the clock/RAM: CE, I/O (data line), and SCLK (serial clock). Data can be transferred to and from the clock/RAM 1 byte at a time or in a burst of up to 31 bytes. 
+Interfacing the DS1302 with a microprocessor is simplified by using synchronous serial communication. Only three wires are required to communicate with the clock/RAM: CE, I/O (data line), and SCLK (serial clock). Data can be transferred to and from the clock/RAM 1 byte at a time or in a burst of up to 31 bytes.  
 
 The DS1302 is designed to operate on very low power and retain data and clock information on less than 1µW. The DS1302 is the successor to the DS1202. In addition to the basic timekeeping functions of the DS1202, the DS1302 has the additional features of dual power pins for primary and backup power supplies, programmable trickle charger for VCC1, and seven additional bytes of scratchpad memory.
 
@@ -26,5 +26,12 @@ crystal and oscillator from noise. Refer to Application Note 58: Crystal Conside
 for detailed information.
 
 <img src="images/WhatsApp Image 2020-01-23 at 22.32.09 (1).jpeg" width= "500">
+
+
+# DS1302 C code
+
+The code is written using VS Code IDE and PlastformIO extension with full support with support with STM32Cube HAL, This code can be ported and recompile on other environment such as Eclipse based IDE (TrueStudio tested).
+
+<img src="images/code.png" width= "500">
 
 
